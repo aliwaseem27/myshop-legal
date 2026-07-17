@@ -1,0 +1,228 @@
+/* MyShop Manager — legal pages */
+
+:root {
+  --teal: #0d9488;
+  --teal-dark: #0f766e;
+  --teal-soft: #ccfbf1;
+  --ink: #134e4a;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --bg: #f8fafa;
+  --card: #ffffff;
+  --line: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Cairo', 'Segoe UI', Tahoma, system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ── Language switching ─────────────────────────────── */
+/* Arabic is the no-JS default; lang.js flips data-active-lang. */
+main[data-lang='en'] {
+  display: none;
+}
+html[data-active-lang='en'] main[data-lang='ar'] {
+  display: none;
+}
+html[data-active-lang='en'] main[data-lang='en'] {
+  display: block;
+}
+
+/* ── Header ─────────────────────────────────────────── */
+.site-header {
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+  color: #fff;
+  padding: 0.9rem 1.25rem;
+}
+
+.site-header .bar {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: block;
+}
+
+.site-header .brand {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.2px;
+  flex: 1;
+}
+
+.site-header .brand a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#lang-toggle {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+#lang-toggle:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+/* ── Content ────────────────────────────────────────── */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+h1 {
+  color: var(--ink);
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  margin-block: 1rem;
+}
+
+h2 {
+  color: var(--teal-dark);
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+  padding-inline-start: 0.75rem;
+  border-inline-start: 4px solid var(--teal);
+  line-height: 1.5;
+}
+
+p,
+ul {
+  margin: 0.5rem 0;
+}
+
+ul {
+  padding-inline-start: 1.4rem;
+}
+
+li {
+  margin-block: 0.25rem;
+}
+
+a {
+  color: var(--teal-dark);
+}
+
+strong {
+  color: var(--ink);
+}
+
+/* ── Index page cards ───────────────────────────────── */
+.doc-links {
+  display: grid;
+  gap: 0.9rem;
+  margin-block: 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.doc-links a {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-inline-start: 4px solid var(--teal);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.doc-links a:hover {
+  background: var(--teal-soft);
+}
+
+.doc-links .doc-title {
+  display: block;
+  font-weight: 700;
+  color: var(--teal-dark);
+  font-size: 1.1rem;
+}
+
+.doc-links .doc-sub {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hero {
+  text-align: center;
+  padding-block: 1.5rem 0.5rem;
+}
+
+.hero img {
+  width: 88px;
+  height: 88px;
+  border-radius: 22px;
+  box-shadow: 0 6px 18px rgba(13, 148, 136, 0.25);
+}
+
+/* ── Footer ─────────────────────────────────────────── */
+.site-footer {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.35rem;
+  }
+
+  main {
+    padding-inline: 1rem;
+  }
+
+  section {
+    padding: 0.85rem 1rem;
+  }
+}
