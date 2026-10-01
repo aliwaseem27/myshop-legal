@@ -494,8 +494,11 @@ html[dir='ltr'] .flip {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1194 / 834;
   border-radius: 14px;
+}
+
+.tablet .ph {
+  aspect-ratio: 1180 / 820;
 }
 
 .desktop {
@@ -510,8 +513,11 @@ html[dir='ltr'] .flip {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1440 / 900;
   border-radius: 8px;
+}
+
+.desktop .ph {
+  aspect-ratio: 1600 / 894;
 }
 
 /* Placeholder for a screenshot that has not been captured
@@ -708,50 +714,19 @@ html[dir='ltr'] .hero h1 {
   width: 260px;
 }
 
-.label {
+/* The label preview rides in front of the scanner, offset to
+   the reading-start side, like a second phone held beside it. */
+.scan-stage .label-shot {
   position: absolute;
   bottom: 0;
   inset-inline-start: 0;
-  width: 250px;
-  padding: 14px;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: var(--shadow);
+  width: 180px;
+  border-radius: 34px;
+  padding: 7px;
 }
 
-.label .top {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  font-weight: 800;
-  line-height: 1.4;
-}
-
-.label .top small {
-  display: block;
-  font-weight: 600;
-  color: var(--muted);
-  font-size: 0.8rem;
-}
-
-.label .qr {
-  width: 64px;
-  height: 64px;
-  stroke: var(--ink);
-  stroke-width: 1.6;
-}
-
-.label .bars {
-  height: 46px;
-  margin-top: 10px;
-  background: repeating-linear-gradient(90deg, #111827 0 2px, #fff 2px 4px, #111827 4px 5px, #fff 5px 8px, #111827 8px 11px, #fff 11px 12px);
-}
-
-.label .size {
-  margin: 4px 0 0;
-  text-align: center;
-  font-size: 0.75rem;
-  color: var(--muted);
+.scan-stage .label-shot img {
+  border-radius: 28px;
 }
 
 /* Device trio */

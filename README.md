@@ -36,9 +36,9 @@ Append `?lang=ar` or `?lang=en` to open a page in a specific language
   `<head>` script, so a visitor without JS sees all content (all three device
   panels, every question). FAQ answers are native `<details>`. Motion is
   skipped under `prefers-reduced-motion`.
-- The App Store / Google Play buttons are in the markup with `hidden` and a
-  `TODO: store links` comment (home page hero and closing band). Fill in the
-  URLs and remove `hidden` once the store listings are public.
+- The App Store / Google Play buttons (home page hero and closing band) link to
+  the live listings: https://apps.apple.com/us/app/myshop-manager/id6795263039
+  and https://play.google.com/store/apps/details?id=com.aliwaseem.myshopmanager.
 - Deployed by GitHub Pages from the `main` branch, root folder.
   Pushing to `main` republishes automatically (allow a minute or two).
 - `.nojekyll` disables Jekyll processing.
@@ -73,29 +73,27 @@ output, or the page shifts while the images load. Both language blocks show the
 **same Arabic screenshots** — the app is Arabic-first and no English captures
 exist; making an English set means capturing into `…/iphone/en/` first.
 
-### Captures still to come
+### Scanner, label, tablet and computer captures
 
-Until these exist, each spot shows a dashed `.ph` placeholder whose
-`data-shot` attribute names the file that replaces it (`grep -n data-shot *.html`).
-To swap one in, replace the `<div class="ph" …>…</div>` with an `<img>` of the
-same file, keeping the frame (`.phone`, `.tablet` or `.desktop`) around it.
-Capture in **Arabic** with guest-demo data, like the phone set.
+These came straight from Ali (Arabic, real shop data), not from the store
+folder, so they have no regen loop. Recapture and re-export at the same size:
 
 | File | Device | Screen | Export size | Used on |
 | --- | --- | --- | --- | --- |
 | `screens/10.webp` | Phone | Scanner with the scanned-items list | 515×1120 | Home, Features, Screens |
-| `screens/11.webp` | Phone | Print-label preview for a material (QR + barcode, 50×30) | 515×1120 | Screens |
-| `screens/tablet-quick-sale.webp` | Tablet, landscape | Quick Sale: product grid + cart | 1194×834 | Home, Features, Screens |
-| `screens/tablet-orders.webp` | Tablet, landscape | Orders: list + selected order | 1194×834 | Screens |
-| `screens/tablet-inventory.webp` | Tablet, landscape | Inventory: list + selected material | 1194×834 | Screens |
-| `screens/tablet-create-order.webp` | Tablet, landscape | Create Order: items + payment panel | 1194×834 | Screens |
-| `screens/desktop-orders.webp` | Computer | Orders: sidebar, table + detail panel | 1440×900 | Home, Screens |
-| `screens/desktop-reports.webp` | Computer | A report: filters column + results | 1440×900 | Features, Screens |
-| `screens/desktop-invoice-settings.webp` | Computer | Invoice Settings with the live preview | 1440×900 | Screens |
+| `screens/11.webp` | Phone | Print-label preview, top part (QR + barcode, 50×30) | 515×1120 | Home, Screens |
+| `screens/tablet-quick-sale.webp` | iPad, landscape | Quick Sale: product grid + cart | 1180×820 | Home, Features, Screens |
+| `screens/tablet-orders.webp` | iPad, landscape | Orders: list + selected order | 1180×820 | Screens |
+| `screens/tablet-inventory.webp` | iPad, landscape | Inventory: list + selected material | 1180×820 | Screens |
+| `screens/tablet-create-order.webp` | iPad, landscape | Create Order: items + payment panel | 1180×820 | Screens |
+| `screens/desktop-orders.webp` | Computer | Orders: sidebar, table + detail panel | 1600×894 | Home, Screens |
+| `screens/desktop-reports.webp` | Computer | Sales report: filters column + results | 1600×894 | Features, Screens |
+| `screens/desktop-invoice-settings.webp` | Computer | Invoice studio with the live preview | 1600×894 | Screens |
 
-The frames assume those aspect ratios (`aspect-ratio` in `styles.css`), so
-crop the capture to the device's screen with no OS chrome, and give each
-`<img>` matching `width`/`height` attributes.
+Computer captures are macOS window screenshots: crop off the transparent
+shadow and the rounded window corners (about 22 px at 2×) before resizing.
+Each `<img>` carries matching `width`/`height`. The dashed `.ph` style stays
+in `styles.css` for any future capture that isn't ready yet.
 
 ## Updating the pages
 
