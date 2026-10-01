@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-active-lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>المزايا | Features — MyShop Manager</title>
+  <meta name="description" content="كل مزايا ماي شوب مانجر بالتفصيل: الباركود والملصقات، التابلت والكمبيوتر، البيع، الفواتير، المخزون، الديون، التقارير والصلاحيات.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="canonical" href="https://aliwaseem27.github.io/myshop-legal/features.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MyShop Manager">
+  <meta property="og:title" content="المزايا | Features — MyShop Manager">
+  <meta property="og:description" content="كل مزايا ماي شوب مانجر بالتفصيل: الباركود والملصقات، التابلت والكمبيوتر، البيع، الفواتير، المخزون، الديون، التقارير والصلاحيات.">
+  <meta property="og:url" content="https://aliwaseem27.github.io/myshop-legal/features.html">
+  <meta property="og:image" content="https://aliwaseem27.github.io/myshop-legal/app_icon.png">
+  <link rel="icon" type="image/png" href="app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="lang.js"></script>
+  <!-- Marks JS as available before first paint: reveal, tabs and the FAQ
+       filter scope their start states to .js, so no-JS visitors see all content. -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#content"><span class="ar">انتقل إلى المحتوى</span><span class="en">Skip to content</span></a>
+
+  <header class="hdr">
+    <div class="wrap bar">
+      <a class="brand" href="index.html"><img src="app_icon.png" alt="" width="40" height="40"><span class="ar">ماي شوب مانجر</span><span class="en">MyShop Manager</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html"><span class="ar">الرئيسية</span><span class="en">Home</span></a>
+        <a href="features.html" aria-current="page"><span class="ar">المزايا</span><span class="en">Features</span></a>
+        <a href="how.html"><span class="ar">كيف يعمل</span><span class="en">How it works</span></a>
+        <a href="screens.html"><span class="ar">الشاشات</span><span class="en">Screens</span></a>
+        <a href="faq.html"><span class="ar">الأسئلة الشائعة</span><span class="en">FAQ</span></a>
+        <a href="support.html"><span class="ar">الدعم</span><span class="en">Support</span></a>
+      </nav>
+      <button id="lang-toggle" type="button" lang="en">English</button>
+    </div>
+  </header>
+
+  <!-- Icon sprite: defined once per page, referenced from both language blocks. -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V4h3M18 4h3v3M21 17v3h-3M6 20H3v-3M7 8v8M10 8v8M13 8v8M17 8v8"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM17 20h4v-3M20 14v.01"/></symbol>
+    <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2" y="4" width="14" height="10" rx="2"/><path d="M6 18h6"/><rect x="17" y="8" width="5" height="12" rx="1.5"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2z"/><path d="M9 7h6M9 11h6M9 15h4"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.8.7 3 2.5 3.5 5.2"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 10h4.5L21 13.5V16h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+    <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="9" cy="7" rx="6" ry="3"/><path d="M3 7v5c0 1.7 2.7 3 6 3s6-1.3 6-3V7"/><path d="M15 11.2c3.3.2 6 1.4 6 2.8v4c0 1.7-2.7 3-6 3-2 0-3.8-.5-4.9-1.3"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9 5 4h14l2 5"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v8h14v-8"/></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V3h9l9 9-9 9-9-9z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 20h16"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  </svg>
+
+  <div id="content">
+  <!-- ═══════════════════════ العربية ═══════════════════════ -->
+  <main data-lang="ar">
+    <div class="wrap">
+      <header class="page-head">
+        <span class="eyebrow">المزايا</span>
+        <h1>كل أدوات المحل، بالتفصيل</h1>
+        <p class="lead">من أول بيعة في الصباح إلى تقرير آخر الشهر، على الهاتف والتابلت والكمبيوتر. هذا ما يفعله التطبيق، قسماً قسماً.</p>
+      </header>
+
+      <nav class="jump" aria-label="أقسام الصفحة">
+        <a href="#ar-scan">الباركود و QR</a><a href="#ar-devices">التابلت والكمبيوتر</a><a href="#ar-sale">البيع</a><a href="#ar-invoice">الفواتير والطباعة</a><a href="#ar-stock">المخزون</a><a href="#ar-buyers">المشترين</a><a href="#ar-more">الموردون والمال</a><a href="#ar-reports">التقارير</a><a href="#ar-team">الفريق</a><a href="#ar-lang">اللغة والمحلات</a>
+      </nav>
+
+      <section id="ar-scan" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-scan"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">الباركود و QR والملصقات</h2>
+          <p class="lead">من رمز المادة إلى السلة بمسحة واحدة، بالكاميرا أو بقارئ الباركود.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>امسح لتبيع:</strong> كل مسحة تضيف المادة للسلة، والمسح المتكرر يزيد الكمية، مع صوت واهتزاز تأكيد يمكنك كتمه.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>قارئ باركود:</strong> اربط قارئاً سلكياً أو بلوتوث وامسح دون لمس الشاشة.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>رمز لكل مادة:</strong> سجّل باركود المصنّع، أو دع التطبيق يولّد رمزاً خاصاً بمحلك. ولكل قياس ولون رمزه.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>ملصقات:</strong> QR أو باركود أو كلاهما، بمقاسات 50 × 30 و 40 × 30 مم وغيرها، أو أوراق ملصقات A4. اطبع أو شارك.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>كود غير معروف:</strong> اربطه بمادة موجودة أو أنشئ مادة جديدة من الكاونتر.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>QR على الفاتورة:</strong> امسحه من قائمة الطلبات لتفتح الطلب.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><div class="ph" role="img" aria-label="شاشة المسح مع قائمة المواد الممسوحة" data-shot="screens/10.webp">لقطة حقيقية: المسح مع قائمة المواد الممسوحة<small>تُضاف قريباً</small></div></div></div>
+      </section>
+
+      <section id="ar-devices" class="feat-block">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-devices"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">على التابلت والكمبيوتر</h2>
+          <p class="lead" style="max-width: 720px">الشاشة تترتّب حسب عرض النافذة لا نوع الجهاز. على الشاشة الواسعة ترى القائمة والتفاصيل معاً، والسلة ثابتة بجانب المواد، والتقارير بمساحة كاملة.</p>
+        </div>
+        <div class="duo">
+          <figure class="reveal"><div class="desktop"><div class="ph" role="img" aria-label="التقارير على الكمبيوتر: الفلاتر في عمود والنتائج بجانبها" data-shot="screens/desktop-reports.webp">لقطة حقيقية: التقارير على الكمبيوتر<small>تُضاف قريباً</small></div></div></figure>
+          <figure class="reveal" style="--d:.1s"><div class="tablet"><div class="ph" role="img" aria-label="البيع السريع على التابلت: المواد والسلة" data-shot="screens/tablet-quick-sale.webp">لقطة حقيقية: البيع على التابلت<small>تُضاف قريباً</small></div></div></figure>
+        </div>
+        <ul class="grid-tiles layouts" data-stagger>
+          <li class="glass reveal"><div class="mini" aria-hidden="true"><span style="flex: 0 0 18%"></span><span style="flex: 1"></span></div><h3>قائمة وتفاصيل</h3><p>الطلبات والمخزون والمشترين والموردين: اختر من القائمة وتظهر التفاصيل بجانبها.</p></li>
+          <li class="glass reveal"><div class="mini" aria-hidden="true"><span style="flex: 1.6"></span><span style="flex: 1"></span></div><h3>بيع بشاشة كاملة</h3><p>شبكة المواد على جهة، والسلة وزر الدفع ثابتان على الجهة الأخرى.</p></li>
+          <li class="glass reveal"><div class="mini" aria-hidden="true"><span style="flex: 1.5"></span><span style="flex: 1"></span></div><h3>نماذج مع معاينة</h3><p>إعدادات الفاتورة والمحل مع معاينة حيّة بجانب النموذج.</p></li>
+          <li class="glass reveal"><div class="mini" aria-hidden="true"><span style="flex: 0 0 26%"></span><span style="flex: 1"></span></div><h3>تقارير واسعة</h3><p>الفلاتر في عمود، والأرقام والرسوم والجداول بجانبها.</p></li>
+        </ul>
+      </section>
+
+      <section id="ar-sale" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">البيع والطلبات</h2>
+          <p class="lead">شاشة بيع سريع للكاونتر المزدحم، وطلب كامل حين تحتاج التفاصيل.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>بيع سريع:</strong> امسح المادة، أو ابحث عنها، أو اخترها من المفضلة، والسلة تحسب الإجمالي فوراً.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>مفرد أو جملة:</strong> لكل طلب نوعه، ولكل نوع سعره.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>طريقة الدفع:</strong> نقد، أو آجل، أو دفعة جزئية والباقي يُسجَّل ديناً على المشتري.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>الإلغاء والإرجاع:</strong> ألغِ طلباً أو أرجع مواد منه، مع تأكيد قبل كل عملية حساسة.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/01.webp" width="515" height="1120" loading="lazy" alt="شاشة البيع السريع"></div></div>
+      </section>
+
+      <section id="ar-invoice" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-printer"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">الفواتير والطباعة</h2>
+          <p class="lead">فاتورة باسم محلك وشعاره، بالشكل واللغة التي تريدها.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>قوالب A4</strong> للفواتير الكاملة، و<strong>إيصال حراري</strong> للطابعات الصغيرة.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>بيانات المحل</strong> على كل فاتورة: الشعار، الأرقام، العنوان، وترقيم تلقائي ببادئة تختارها، ورمز QR للطلب.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>لغة الفاتورة مستقلة:</strong> التطبيق بالإنجليزية والفاتورة بالعربية، أو العكس.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>اطبع أو شارك:</strong> طباعة مباشرة، أو PDF عبر واتساب وتيليغرام وغيرها.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/06.webp" width="515" height="1120" loading="lazy" alt="فاتورة جاهزة للطباعة أو المشاركة"></div></div>
+      </section>
+
+      <section id="ar-stock" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-box"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">المخزون والمواد</h2>
+          <p class="lead">اعرف ما عندك، وكم كلّفك، ومتى تحتاج تطلب من جديد.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>مواد بقياسات وألوان</strong> مرتّبة في أقسام، مع المفضلة للمواد الأكثر بيعاً.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>سعر الشراء والبيع وهامش الربح</strong> ظاهرة في تفاصيل كل مادة.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>الشحنات والتعديلات:</strong> سجّل البضاعة الواردة من المورد، وصحّح الكميات عند الجرد.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>تنبيهات</strong> عند انخفاض الكمية وقبل انتهاء الصلاحية.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/04.webp" width="515" height="1120" loading="lazy" alt="تفاصيل مادة مع سعر الشراء والبيع وهامش الربح"></div></div>
+      </section>
+
+      <section id="ar-buyers" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">المشترين والديون</h2>
+          <p class="lead">دفتر الديون، لكن مرتّب ولا يضيع.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>ملف لكل مشترٍ</strong> برصيده المستحق وكل طلباته ودفعاته.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>سجّل الدفعات</strong> كاملة أو جزئية، والرصيد يتحدّث تلقائياً.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>اتصل أو راسل</strong> المشتري من داخل ملفه مباشرة.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/03.webp" width="515" height="1120" loading="lazy" alt="ملف مشترٍ يعرض الرصيد المستحق وسجل الدفعات"></div></div>
+      </section>
+
+      <section id="ar-more" class="feat-block">
+        <div class="halves">
+          <div class="glass card reveal">
+            <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-truck"/></svg></span>
+            <h2 style="margin-top: 16px">الموردون والشحنات</h2>
+            <ul class="checks" style="margin-top: 0">
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>ملف لكل مورد بأرقامه وعنوانه.</li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>كل شحنة برقمها ورصيدها المستحق.</li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>دفعات المورد، وكم بقي له عليك.</li>
+            </ul>
+          </div>
+          <div class="glass card reveal" style="--d:.1s">
+            <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-coins"/></svg></span>
+            <h2 style="margin-top: 16px">المصاريف والصندوق</h2>
+            <ul class="checks" style="margin-top: 0">
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>مصاريف بمجموعات، ومنها ما يتكرر شهرياً كالإيجار.</li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>أجور العمال ضمن المصاريف.</li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>سحوبات من الصندوق، مع تأكيد قبل كل سحب.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="ar-reports" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-chart"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">التقارير</h2>
+          <p class="lead">اختر الفترة، وشاهد أين يذهب المال ومن أين يأتي.</p>
+          <ul class="chips-list">
+            <li class="glass">المبيعات</li>
+            <li class="glass">الأرباح والمصاريف</li>
+            <li class="glass">المخزون وحركة المواد</li>
+            <li class="glass">الديون والمدفوعات الآجلة</li>
+            <li class="glass">المرتجعات</li>
+            <li class="glass">الموردون</li>
+            <li class="glass">نشاط المستخدمين</li>
+            <li class="glass">موقف الصندوق</li>
+          </ul>
+          <p class="muted" style="margin-top: 20px">كل تقرير يُصدَّر PDF أو Excel، أو يُطبع مباشرة.</p>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/08.webp" width="515" height="1120" loading="lazy" alt="قائمة التقارير في التطبيق"></div></div>
+      </section>
+
+      <section id="ar-team" class="feat-block">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">الفريق والصلاحيات</h2>
+          <p class="lead" style="max-width: 680px">أربعة أدوار جاهزة. لا كلمات سر إضافية لكل عملية، بل تأكيد واضح قبل الحذف والسحب وتغيير الأسعار، وسجل يحفظ من فعل ماذا.</p>
+        </div>
+        <div class="glass table-wrap reveal">
+          <table class="matrix">
+            <caption class="muted" style="caption-side: bottom; padding-top: 8px; font-size: .9rem">✓ مسموح · — غير مسموح</caption>
+            <thead><tr><th scope="col">الصلاحية</th><th scope="col"><span class="badge r-owner">المالك</span></th><th scope="col"><span class="badge r-manager">المدير</span></th><th scope="col"><span class="badge r-cashier">الكاشير</span></th><th scope="col"><span class="badge r-viewer">المشاهد</span></th></tr></thead>
+            <tbody>
+              <tr><th scope="row" style="font-weight: 600">البيع وإنشاء الطلبات</th><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">تسجيل دفعات المشترين</th><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">المسح لفتح مادة</th><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+              <tr><th scope="row" style="font-weight: 600">إضافة المواد وتغيير الأسعار</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">رموز المواد وطباعة الملصقات</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">الموردون والشحنات</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">المصاريف والسحوبات والصندوق</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">عرض التقارير وتصديرها</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="y">✓</td></tr>
+              <tr><th scope="row" style="font-weight: 600">إدارة الموظفين</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">حذف المحل</th><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="ar-lang" class="feat-block">
+        <h2 class="h2 reveal">اللغة والأجهزة والمحلات</h2>
+        <ul class="grid-tiles" data-stagger>
+          <li class="glass reveal"><span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg></span><h3>عربي وإنجليزي</h3><p>واجهة كاملة من اليمين لليسار، وتبديل اللغة بلمسة.</p></li>
+          <li class="glass reveal"><span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-devices"/></svg></span><h3>أكثر من جهاز</h3><p>الفريق كله على نفس البيانات، والتنبيهات تصل لحظياً.</p></li>
+          <li class="glass reveal"><span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-store"/></svg></span><h3>أكثر من محل</h3><p>حساب واحد لعدة محلات، وبيانات كل محل منفصلة تماماً.</p></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════ English ═══════════════════════ -->
+  <main data-lang="en" dir="ltr">
+    <div class="wrap">
+      <header class="page-head">
+        <span class="eyebrow">Features</span>
+        <h1>Every shop tool, in detail</h1>
+        <p class="lead">From the first sale of the morning to the month-end report, on phone, tablet and computer. Here is what the app does, section by section.</p>
+      </header>
+
+      <nav class="jump" aria-label="On this page">
+        <a href="#en-scan">Barcodes &amp; QR</a><a href="#en-devices">Tablet &amp; computer</a><a href="#en-sale">Selling</a><a href="#en-invoice">Invoices &amp; printing</a><a href="#en-stock">Inventory</a><a href="#en-buyers">Buyers</a><a href="#en-more">Suppliers &amp; money</a><a href="#en-reports">Reports</a><a href="#en-team">Team</a><a href="#en-lang">Language &amp; shops</a>
+      </nav>
+
+      <section id="en-scan" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-scan"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">Barcodes, QR and labels</h2>
+          <p class="lead">From a material's code to the cart in one scan, with the camera or a barcode scanner.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Scan to sell:</strong> every scan adds the material to the cart and repeat scans raise the quantity, with a confirmation sound and vibration you can mute.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Barcode scanners:</strong> connect a wired or Bluetooth scanner and scan without touching the screen.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>A code for every material:</strong> record the manufacturer's barcode or let the app generate one for your shop, with a separate code for each size and colour.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Labels:</strong> QR, barcode or both, on 50 × 30 and 40 × 30 mm rolls and more, or A4 sticker sheets. Print or share.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Unknown codes:</strong> link them to an existing material or create a new one right at the counter.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>QR on invoices:</strong> scan it from the orders list to open the order.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><div class="ph" role="img" aria-label="Scanner screen with the list of scanned materials" data-shot="screens/10.webp">Real capture: the scanner and its scanned-items list<small>Coming shortly</small></div></div></div>
+      </section>
+
+      <section id="en-devices" class="feat-block">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-devices"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">On tablet and computer</h2>
+          <p class="lead" style="max-width: 720px">The layout follows the window's width, not the device type. On a wide screen you see the list and the details together, the cart stays beside the products, and reports get the full width.</p>
+        </div>
+        <div class="duo">
+          <figure class="reveal"><div class="desktop"><div class="ph" role="img" aria-label="Reports on a computer: filters in a column, results beside them" data-shot="screens/desktop-reports.webp">Real capture: reports on a computer<small>Coming shortly</small></div></div></figure>
+          <figure class="reveal" style="--d:.1s"><div class="tablet"><div class="ph" role="img" aria-label="Quick Sale on a tablet: products and cart" data-shot="screens/tablet-quick-sale.webp">Real capture: selling on a tablet<small>Coming shortly</small></div></div></figure>
+        </div>
+        <ul class="grid-tiles layouts" data-stagger>
+          <li class="glass reveal"><div class="mini" aria-hidden="true"><span style="flex: 0 0 18%"></span><span style="flex: 1"></span></div><h3>List and details</h3><p>Orders, inventory, buyers and suppliers: pick from the list and the details open beside it.</p></li>
+          <li class="glass reveal"><div class="mini" aria-hidden="true"><span style="flex: 1.6"></span><span style="flex: 1"></span></div><h3>Full-screen selling</h3><p>The product grid on one side, the cart and checkout fixed on the other.</p></li>
+          <li class="glass reveal"><div class="mini" aria-hidden="true"><span style="flex: 1.5"></span><span style="flex: 1"></span></div><h3>Forms with a preview</h3><p>Invoice and shop settings with a live preview beside the form.</p></li>
+          <li class="glass reveal"><div class="mini" aria-hidden="true"><span style="flex: 0 0 26%"></span><span style="flex: 1"></span></div><h3>Wide reports</h3><p>Filters in a column, with figures, charts and tables beside them.</p></li>
+        </ul>
+      </section>
+
+      <section id="en-sale" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">Selling and orders</h2>
+          <p class="lead">Quick Sale for a busy counter, and a full order when you need the details.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Quick Sale:</strong> scan a material, search for it or pick it from favourites, and the cart totals instantly.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Retail or wholesale:</strong> each order has its type, and each type its price.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Payment:</strong> cash, deferred, or part-paid with the rest recorded as the buyer's debt.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Cancel and return:</strong> cancel an order or return items from it, with a confirmation before every sensitive step.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/01.webp" width="515" height="1120" loading="lazy" alt="Quick Sale screen (Arabic interface)"></div></div>
+      </section>
+
+      <section id="en-invoice" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-printer"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">Invoices and printing</h2>
+          <p class="lead">Invoices in your shop's name and logo, in the layout and language you choose.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>A4 templates</strong> for full invoices, and a <strong>thermal receipt</strong> for small printers.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Your shop's details</strong> on every invoice: logo, phone numbers, address, automatic numbering with your own prefix, and an order QR code.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Invoice language is separate:</strong> the app in English and invoices in Arabic, or the other way round.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Print or share:</strong> print directly, or send a PDF over WhatsApp, Telegram and more.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/06.webp" width="515" height="1120" loading="lazy" alt="An invoice ready to print or share (Arabic interface)"></div></div>
+      </section>
+
+      <section id="en-stock" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-box"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">Inventory and materials</h2>
+          <p class="lead">Know what you have, what it cost, and when to reorder.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Materials with sizes and colours</strong>, sorted into categories, with favourites for your best sellers.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Buying price, selling price and margin</strong> on every material's page.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Shipments and adjustments:</strong> record stock arriving from suppliers, and correct quantities after a stock count.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Alerts</strong> when stock runs low and before items expire.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/04.webp" width="515" height="1120" loading="lazy" alt="A material's details with buying price, selling price and margin (Arabic interface)"></div></div>
+      </section>
+
+      <section id="en-buyers" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">Buyers and debts</h2>
+          <p class="lead">The debt notebook, tidy and impossible to lose.</p>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>A profile for every buyer</strong> with the balance owed and all their orders and payments.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Record payments</strong>, full or partial, and the balance updates itself.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Call or message</strong> a buyer straight from their profile.</span></li>
+          </ul>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/03.webp" width="515" height="1120" loading="lazy" alt="A buyer's profile with the balance owed and payment history (Arabic interface)"></div></div>
+      </section>
+
+      <section id="en-more" class="feat-block">
+        <div class="halves">
+          <div class="glass card reveal">
+            <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-truck"/></svg></span>
+            <h2 style="margin-top: 16px">Suppliers and shipments</h2>
+            <ul class="checks" style="margin-top: 0">
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>A profile for every supplier with phone numbers and address.</li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Every shipment with its number and balance due.</li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Supplier payments, and what you still owe.</li>
+            </ul>
+          </div>
+          <div class="glass card reveal" style="--d:.1s">
+            <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-coins"/></svg></span>
+            <h2 style="margin-top: 16px">Expenses and cash</h2>
+            <ul class="checks" style="margin-top: 0">
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Expenses in groups, including monthly ones like rent.</li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Workers' wages as part of expenses.</li>
+              <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Withdrawals from the till, confirmed before each one.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="en-reports" class="feat">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-chart"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">Reports</h2>
+          <p class="lead">Pick a period and see where the money goes and where it comes from.</p>
+          <ul class="chips-list">
+            <li class="glass">Sales</li>
+            <li class="glass">Profit and expenses</li>
+            <li class="glass">Stock and movement</li>
+            <li class="glass">Debts and deferred payments</li>
+            <li class="glass">Returns</li>
+            <li class="glass">Suppliers</li>
+            <li class="glass">User activity</li>
+            <li class="glass">Cash position</li>
+          </ul>
+          <p class="muted" style="margin-top: 20px">Every report exports to PDF or Excel, or prints directly.</p>
+        </div>
+        <div class="shot reveal"><div class="phone"><img src="screens/08.webp" width="515" height="1120" loading="lazy" alt="The app's reports list (Arabic interface)"></div></div>
+      </section>
+
+      <section id="en-team" class="feat-block">
+        <div class="reveal">
+          <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span>
+          <h2 class="h2" style="margin-top: 16px">Team and permissions</h2>
+          <p class="lead" style="max-width: 680px">Four ready-made roles. No extra passwords for every action, just a clear confirmation before deleting, withdrawing or changing prices, and a log of who did what.</p>
+        </div>
+        <div class="glass table-wrap reveal">
+          <table class="matrix">
+            <caption class="muted" style="caption-side: bottom; padding-top: 8px; font-size: .9rem">✓ allowed · — not allowed</caption>
+            <thead><tr><th scope="col">Permission</th><th scope="col"><span class="badge r-owner">Owner</span></th><th scope="col"><span class="badge r-manager">Manager</span></th><th scope="col"><span class="badge r-cashier">Cashier</span></th><th scope="col"><span class="badge r-viewer">Viewer</span></th></tr></thead>
+            <tbody>
+              <tr><th scope="row" style="font-weight: 600">Sell and create orders</th><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">Record buyer payments</th><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">Scan to open a material</th><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+              <tr><th scope="row" style="font-weight: 600">Add materials and change prices</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">Material codes and label printing</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">Suppliers and shipments</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">Expenses, withdrawals and the till</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">View and export reports</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="y">✓</td></tr>
+              <tr><th scope="row" style="font-weight: 600">Manage staff</th><td class="y">✓</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><th scope="row" style="font-weight: 600">Delete the shop</th><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="en-lang" class="feat-block">
+        <h2 class="h2 reveal">Language, devices and shops</h2>
+        <ul class="grid-tiles" data-stagger>
+          <li class="glass reveal"><span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg></span><h3>Arabic and English</h3><p>A complete right-to-left interface, and switching language takes one tap.</p></li>
+          <li class="glass reveal"><span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-devices"/></svg></span><h3>Many devices</h3><p>The whole team on the same data, with alerts arriving instantly.</p></li>
+          <li class="glass reveal"><span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-store"/></svg></span><h3>Many shops</h3><p>One account for several shops, each shop's data fully separate.</p></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  </div>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="brand" href="index.html"><img src="app_icon.png" alt="" width="40" height="40"><span class="ar">ماي شوب مانجر</span><span class="en">MyShop Manager</span></a>
+          <p class="tag"><span class="ar">إدارة المبيعات والمخزون للمحلات في العراق.</span><span class="en">Sales and inventory management for shops in Iraq.</span></p>
+        </div>
+        <nav aria-label="App">
+          <h2><span class="ar">التطبيق</span><span class="en">App</span></h2>
+          <ul>
+            <li><a href="features.html"><span class="ar">المزايا</span><span class="en">Features</span></a></li>
+            <li><a href="how.html"><span class="ar">كيف يعمل</span><span class="en">How it works</span></a></li>
+            <li><a href="screens.html"><span class="ar">الشاشات</span><span class="en">Screens</span></a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Help">
+          <h2><span class="ar">المساعدة</span><span class="en">Help</span></h2>
+          <ul>
+            <li><a href="faq.html"><span class="ar">الأسئلة الشائعة</span><span class="en">FAQ</span></a></li>
+            <li><a href="support.html"><span class="ar">الدعم</span><span class="en">Support</span></a></li>
+            <li><a href="mailto:myshop.manager.app@gmail.com">myshop.manager.app@gmail.com</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h2><span class="ar">قانوني</span><span class="en">Legal</span></h2>
+          <ul>
+            <li><a href="privacy.html"><span class="ar">سياسة الخصوصية</span><span class="en">Privacy Policy</span></a></li>
+            <li><a href="terms.html"><span class="ar">شروط الاستخدام</span><span class="en">Terms of Service</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="credit"><span class="ar">MyShop Manager — تطوير: علي وسيم</span><span class="en">MyShop Manager — developed by Ali Waseem</span></p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

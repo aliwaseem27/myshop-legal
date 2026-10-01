@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-active-lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>كيف يعمل | How it works — MyShop Manager</title>
+  <meta name="description" content="من التحميل إلى أول بيعة: ست خطوات لتجهيز محلك على ماي شوب مانجر — How to set up your shop on MyShop Manager.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="canonical" href="https://aliwaseem27.github.io/myshop-legal/how.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MyShop Manager">
+  <meta property="og:title" content="كيف يعمل | How it works — MyShop Manager">
+  <meta property="og:description" content="من التحميل إلى أول بيعة: ست خطوات لتجهيز محلك على ماي شوب مانجر — How to set up your shop on MyShop Manager.">
+  <meta property="og:url" content="https://aliwaseem27.github.io/myshop-legal/how.html">
+  <meta property="og:image" content="https://aliwaseem27.github.io/myshop-legal/app_icon.png">
+  <link rel="icon" type="image/png" href="app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="lang.js"></script>
+  <!-- Marks JS as available before first paint: reveal, tabs and the FAQ
+       filter scope their start states to .js, so no-JS visitors see all content. -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#content"><span class="ar">انتقل إلى المحتوى</span><span class="en">Skip to content</span></a>
+
+  <header class="hdr">
+    <div class="wrap bar">
+      <a class="brand" href="index.html"><img src="app_icon.png" alt="" width="40" height="40"><span class="ar">ماي شوب مانجر</span><span class="en">MyShop Manager</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html"><span class="ar">الرئيسية</span><span class="en">Home</span></a>
+        <a href="features.html"><span class="ar">المزايا</span><span class="en">Features</span></a>
+        <a href="how.html" aria-current="page"><span class="ar">كيف يعمل</span><span class="en">How it works</span></a>
+        <a href="screens.html"><span class="ar">الشاشات</span><span class="en">Screens</span></a>
+        <a href="faq.html"><span class="ar">الأسئلة الشائعة</span><span class="en">FAQ</span></a>
+        <a href="support.html"><span class="ar">الدعم</span><span class="en">Support</span></a>
+      </nav>
+      <button id="lang-toggle" type="button" lang="en">English</button>
+    </div>
+  </header>
+
+  <!-- Icon sprite: defined once per page, referenced from both language blocks. -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V4h3M18 4h3v3M21 17v3h-3M6 20H3v-3M7 8v8M10 8v8M13 8v8M17 8v8"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM17 20h4v-3M20 14v.01"/></symbol>
+    <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2" y="4" width="14" height="10" rx="2"/><path d="M6 18h6"/><rect x="17" y="8" width="5" height="12" rx="1.5"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2z"/><path d="M9 7h6M9 11h6M9 15h4"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.8.7 3 2.5 3.5 5.2"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 10h4.5L21 13.5V16h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+    <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="9" cy="7" rx="6" ry="3"/><path d="M3 7v5c0 1.7 2.7 3 6 3s6-1.3 6-3V7"/><path d="M15 11.2c3.3.2 6 1.4 6 2.8v4c0 1.7-2.7 3-6 3-2 0-3.8-.5-4.9-1.3"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9 5 4h14l2 5"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v8h14v-8"/></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V3h9l9 9-9 9-9-9z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 20h16"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  </svg>
+
+  <div id="content">
+  <!-- ═══════════════════════ العربية ═══════════════════════ -->
+  <main data-lang="ar">
+    <div class="wrap">
+      <header class="page-head">
+        <span class="eyebrow">كيف يعمل</span>
+        <h1>من التحميل إلى أول بيعة</h1>
+        <p class="lead">ست خطوات تجهّز محلك على التطبيق، على الهاتف أو التابلت أو الكمبيوتر، ثم يصبح جزءاً من يومك.</p>
+      </header>
+
+      <section class="glass try reveal">
+        <span class="tile" style="width: 56px; height: 56px"><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg></span>
+        <div>
+          <h2>جرّب أولاً بوضع الضيف</h2>
+          <p>محل تجريبي كامل بمواد وطلبات وتقارير. البيانات في ذاكرة الجهاز فقط ولا يُحفظ منها شيء.</p>
+        </div>
+      </section>
+
+      <section class="band" style="padding-top: 72px">
+        <ol class="steps">
+          <li class="glass reveal"><span class="num">1</span><div><h2>جهّز ملف المحل</h2><p>الاسم بالعربي والإنجليزي، الشعار، أرقام الهاتف، العنوان وروابط التواصل. ثم إعدادات الفاتورة: القالب، اللغة، وبادئة الترقيم.</p></div></li>
+          <li class="glass reveal"><span class="num">2</span><div><h2>أضف موادك</h2><p>رتّبها في أقسام، وأضف القياسات والألوان، وسعر الشراء والبيع، وحدّ التنبيه عند انخفاض الكمية. امسح باركود كل مادة أو دع التطبيق يولّد لها رمزاً، ثم اطبع ملصقاتها.</p></div></li>
+          <li class="glass reveal"><span class="num">3</span><div><h2>أضف فريقك</h2><p>حساب لكل موظف بدوره: مدير، أو كاشير، أو مشاهد. كلٌّ يدخل من جهازه: هاتف، أو تابلت على الكاونتر، أو كمبيوتر في المكتب.</p></div></li>
+          <li class="glass reveal"><span class="num">4</span><div><h2>ابدأ البيع</h2><p>امسح المواد بالكاميرا أو بقارئ الباركود، أو اخترها من المفضلة. بيع سريع للزبون العابر أو طلب كامل باسم المشتري، نقداً أو آجلاً أو بدفعة جزئية، ثم اطبع الفاتورة أو شاركها.</p></div></li>
+          <li class="glass reveal"><span class="num">5</span><div><h2>تابع الديون والموردين</h2><p>سجّل دفعات المشترين كلما وصلت، وسجّل الشحنات الواردة ودفعاتها للموردين.</p></div></li>
+          <li class="glass reveal"><span class="num">6</span><div><h2>راجع التقارير</h2><p>المبيعات والأرباح والمصاريف والمخزون لأي فترة، وصدّرها PDF أو Excel.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="band">
+        <div class="reveal">
+          <span class="eyebrow">يوم في المحل</span>
+          <h2 class="h2">كيف يبدو اليوم مع التطبيق</h2>
+        </div>
+        <ul class="grid-tiles roles" data-stagger>
+          <li class="glass reveal"><span class="badge r-amber">الصباح</span><p>نظرة على لوحة التحكم، وتنبيهات المواد التي قاربت على النفاد أو انتهاء الصلاحية.</p></li>
+          <li class="glass reveal"><span class="badge r-cashier">خلال اليوم</span><p>الكاشير يمسح ويبيع على التابلت، والمدير يستلم شحنة ويطبع ملصقاتها من الكمبيوتر. كل جهاز يرى التحديث فوراً.</p></li>
+          <li class="glass reveal"><span class="badge r-manager">آخر اليوم</span><p>موقف الصندوق، مبيعات اليوم، ومن عليه دين. وكل عملية محفوظة في السجل.</p></li>
+        </ul>
+      </section>
+
+      <section class="band">
+        <div class="glass price-card reveal">
+          <div>
+            <span class="eyebrow">إدخال الأسعار الذكي</span>
+            <h2 class="h2">الآلاف بخانة، والباقي بخانة</h2>
+            <p class="lead">الخانة الكبيرة للآلاف، والصغيرة لما بعدها وتبدأ بـ 000. ويمكنك التبديل إلى لوحة الأرقام العادية متى شئت.</p>
+          </div>
+          <table class="examples">
+            <thead><tr><th scope="col">تكتب</th><th scope="col">يظهر</th><th scope="col">القيمة</th></tr></thead>
+            <tbody>
+              <tr><td><span class="num">625</span></td><td><strong class="num">625.000</strong></td><td>625,000 دينار عراقي</td></tr>
+              <tr><td><span class="num">17</span> ثم <span class="num">750</span></td><td><strong class="num">17.750</strong></td><td>17,750 دينار عراقي</td></tr>
+              <tr><td><span class="num">1</span></td><td><strong class="num">1.000</strong></td><td>1,000 دينار عراقي</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="cta reveal">
+          <div>
+            <h2>عندك سؤال قبل أن تبدأ؟</h2>
+            <p>قد تجد جوابك في الأسئلة الشائعة، أو راسلنا مباشرة.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-light" href="faq.html">الأسئلة الشائعة</a>
+            <a class="btn btn-ghost" href="support.html">راسل الدعم</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════ English ═══════════════════════ -->
+  <main data-lang="en" dir="ltr">
+    <div class="wrap">
+      <header class="page-head">
+        <span class="eyebrow">How it works</span>
+        <h1>From download to first sale</h1>
+        <p class="lead">Six steps to set up your shop in the app, on phone, tablet or computer. After that it becomes part of your day.</p>
+      </header>
+
+      <section class="glass try reveal">
+        <span class="tile" style="width: 56px; height: 56px"><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg></span>
+        <div>
+          <h2>Try it first in guest mode</h2>
+          <p>A complete sample shop with materials, orders and reports. The data lives only in your device's memory and nothing is saved.</p>
+        </div>
+      </section>
+
+      <section class="band" style="padding-top: 72px">
+        <ol class="steps">
+          <li class="glass reveal"><span class="num">1</span><div><h2>Set up your shop profile</h2><p>Name in Arabic and English, logo, phone numbers, address and social links. Then the invoice settings: template, language and number prefix.</p></div></li>
+          <li class="glass reveal"><span class="num">2</span><div><h2>Add your materials</h2><p>Sort them into categories, add sizes and colours, buying and selling prices, and a low-stock alert level. Scan each material's barcode or let the app generate a code, then print its labels.</p></div></li>
+          <li class="glass reveal"><span class="num">3</span><div><h2>Add your team</h2><p>An account for each staff member with their role: manager, cashier or viewer. Everyone signs in on their own device: a phone, a tablet at the counter, or a computer in the office.</p></div></li>
+          <li class="glass reveal"><span class="num">4</span><div><h2>Start selling</h2><p>Scan materials with the camera or a barcode scanner, or pick them from favourites. A quick sale for walk-in customers or a full order in a buyer's name, cash, deferred or part-paid, then print or share the invoice.</p></div></li>
+          <li class="glass reveal"><span class="num">5</span><div><h2>Keep up with debts and suppliers</h2><p>Record buyer payments as they come in, and record incoming shipments and what you pay suppliers.</p></div></li>
+          <li class="glass reveal"><span class="num">6</span><div><h2>Read your reports</h2><p>Sales, profit, expenses and stock for any period, exported to PDF or Excel.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="band">
+        <div class="reveal">
+          <span class="eyebrow">A day in the shop</span>
+          <h2 class="h2">What a day with the app looks like</h2>
+        </div>
+        <ul class="grid-tiles roles" data-stagger>
+          <li class="glass reveal"><span class="badge r-amber">Morning</span><p>A look at the dashboard, and alerts for materials running low or close to expiry.</p></li>
+          <li class="glass reveal"><span class="badge r-cashier">During the day</span><p>The cashier scans and sells on the tablet while the manager receives a shipment and prints its labels from the computer. Every device sees the change at once.</p></li>
+          <li class="glass reveal"><span class="badge r-manager">End of day</span><p>The cash position, today's sales, and who owes what. Every action is kept in the log.</p></li>
+        </ul>
+      </section>
+
+      <section class="band">
+        <div class="glass price-card reveal">
+          <div>
+            <span class="eyebrow">Smart price entry</span>
+            <h2 class="h2">Thousands in one box, the rest in another</h2>
+            <p class="lead">The large box holds the thousands; the small one holds what follows and starts at 000. You can switch to a regular number pad whenever you like.</p>
+          </div>
+          <table class="examples">
+            <thead><tr><th scope="col">You type</th><th scope="col">It shows</th><th scope="col">Value</th></tr></thead>
+            <tbody>
+              <tr><td>625</td><td><strong>625.000</strong></td><td>625,000 Iraqi Dinar</td></tr>
+              <tr><td>17, then 750</td><td><strong>17.750</strong></td><td>17,750 Iraqi Dinar</td></tr>
+              <tr><td>1</td><td><strong>1.000</strong></td><td>1,000 Iraqi Dinar</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="cta reveal">
+          <div>
+            <h2>A question before you start?</h2>
+            <p>You may find the answer in the FAQ, or write to us directly.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-light" href="faq.html">Read the FAQ</a>
+            <a class="btn btn-ghost" href="support.html">Contact support</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  </div>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="brand" href="index.html"><img src="app_icon.png" alt="" width="40" height="40"><span class="ar">ماي شوب مانجر</span><span class="en">MyShop Manager</span></a>
+          <p class="tag"><span class="ar">إدارة المبيعات والمخزون للمحلات في العراق.</span><span class="en">Sales and inventory management for shops in Iraq.</span></p>
+        </div>
+        <nav aria-label="App">
+          <h2><span class="ar">التطبيق</span><span class="en">App</span></h2>
+          <ul>
+            <li><a href="features.html"><span class="ar">المزايا</span><span class="en">Features</span></a></li>
+            <li><a href="how.html"><span class="ar">كيف يعمل</span><span class="en">How it works</span></a></li>
+            <li><a href="screens.html"><span class="ar">الشاشات</span><span class="en">Screens</span></a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Help">
+          <h2><span class="ar">المساعدة</span><span class="en">Help</span></h2>
+          <ul>
+            <li><a href="faq.html"><span class="ar">الأسئلة الشائعة</span><span class="en">FAQ</span></a></li>
+            <li><a href="support.html"><span class="ar">الدعم</span><span class="en">Support</span></a></li>
+            <li><a href="mailto:myshop.manager.app@gmail.com">myshop.manager.app@gmail.com</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h2><span class="ar">قانوني</span><span class="en">Legal</span></h2>
+          <ul>
+            <li><a href="privacy.html"><span class="ar">سياسة الخصوصية</span><span class="en">Privacy Policy</span></a></li>
+            <li><a href="terms.html"><span class="ar">شروط الاستخدام</span><span class="en">Terms of Service</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="credit"><span class="ar">MyShop Manager — تطوير: علي وسيم</span><span class="en">MyShop Manager — developed by Ali Waseem</span></p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
