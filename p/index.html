@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-active-lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>أسعار الاشتراك | Prices — MyShop Manager</title>
+  <meta name="description" content="اشتراك ماي شوب مانجر بالدينار العراقي: شهري 20,000، سنوي 200,000، أو 4 سنوات 500,000. تواصل معنا ونجهّز محلك — MyShop Manager subscription prices.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#0f766e">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MyShop Manager">
+  <meta property="og:locale" content="ar_IQ">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:title" content="أسعار اشتراك ماي شوب مانجر | MyShop Manager prices">
+  <meta property="og:description" content="اشتراك ماي شوب مانجر بالدينار العراقي: شهري 20,000، سنوي 200,000، أو 4 سنوات 500,000. تواصل معنا ونجهّز محلك — MyShop Manager subscription prices.">
+  <meta property="og:url" content="https://aliwaseem27.github.io/myshop-legal/p/">
+  <meta property="og:image" content="https://aliwaseem27.github.io/myshop-legal/app_icon.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="أيقونة تطبيق ماي شوب مانجر — MyShop Manager app icon">
+  <link rel="icon" type="image/png" href="../app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* Prices page styles. Logical properties only, like the shared sheet. */
+
+    /* Header: this page has no nav, so the language button takes the
+       far end, and the narrow-screen top padding meant for the nav row
+       is dropped. */
+    .p-page #lang-toggle {
+      margin-inline-start: auto;
+    }
+
+    .p-page .hdr .bar {
+      padding-top: 0;
+    }
+
+    /* A stronger focus ring than the shared 55% teal (about 2:1 on glass,
+       1.2:1 on the teal band). */
+    .p-page :focus-visible {
+      outline-color: var(--teal-dark);
+    }
+
+    .p-page .cta :focus-visible {
+      outline-color: #fff;
+    }
+
+    .p-page .page-head {
+      padding-bottom: 24px;
+    }
+
+    .p-sec {
+      margin-top: 56px;
+    }
+
+    /* Plans */
+    .plans {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 16px;
+    }
+
+    .plan {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px;
+    }
+
+    .plan-rec {
+      background: var(--teal-dark);
+      border: 1px solid var(--teal-dark);
+      border-radius: var(--radius);
+      box-shadow: 0 1px 2px rgba(15, 61, 58, 0.08), 0 14px 34px rgba(15, 118, 110, 0.28);
+      color: #fff;
+    }
+
+    .plan-head {
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .plan-name {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 800;
+      line-height: 1.4;
+      color: var(--ink);
+    }
+
+    .plan-price {
+      margin: 8px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0 10px;
+      line-height: 1.2;
+    }
+
+    .plan-amt {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--teal-dark);
+    }
+
+    .plan-cur {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #374151;
+    }
+
+    .plan-per {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .plan-save {
+      margin: 12px 0 0;
+      padding: 2px 14px;
+      border-radius: 999px;
+      background: #fbbf24;
+      color: var(--ink);
+      font-size: 0.875rem;
+      font-weight: 800;
+    }
+
+    .plan-note {
+      margin: 8px 0 0;
+      color: var(--teal-dark);
+      font-weight: 700;
+    }
+
+    .plan-rec .plan-name,
+    .plan-rec .plan-amt,
+    .plan-rec .plan-cur {
+      color: #fff;
+    }
+
+    .plan-rec .plan-per {
+      color: #e6f6f3;
+    }
+
+    .plans-note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
+    /* Contact band (reuses .cta). On a phone the text and each button
+       take the full width; on a wide screen the text sits at the start
+       and the two buttons sit side by side at the end. */
+    .cta-text {
+      flex: 1 1 320px;
+    }
+
+    .p-page .cta .tel-num {
+      margin-top: 16px;
+      font-size: 1.75rem;
+      font-weight: 800;
+      line-height: 1.3;
+      color: #fff;
+    }
+
+    .p-page .cta .btn-row {
+      flex: 1 1 440px;
+    }
+
+    .p-page .cta .btn {
+      flex: 1 1 auto;
+    }
+
+    /* How to start (reuses .steps, in its compact size at every width) */
+    .p-page .steps {
+      margin-top: 20px;
+    }
+
+    .p-page .steps li {
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .p-page .steps .num {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      font-size: 1.25rem;
+    }
+
+    .p-page .steps h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 800;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+
+    /* Try card (reuses .try) */
+    .p-page .try .btn-row {
+      margin-top: 16px;
+    }
+
+    .p-page .try .btn {
+      flex: 1 1 200px;
+      max-width: 320px;
+    }
+
+    @media (min-width: 901px) {
+      .plans,
+      .p-page .steps {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    /* Tablet: each plan is one wide row, name and savings at the start,
+       price, period and monthly equivalent at the end. */
+    @media (min-width: 600px) and (max-width: 900px) {
+      .plan {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+          "name price"
+          "save per"
+          "save note";
+        column-gap: 24px;
+        align-items: center;
+        padding: 24px 32px;
+      }
+
+      .plan-head { grid-area: name; }
+      .plan-price { grid-area: price; justify-self: end; margin: 0; }
+      .plan-per { grid-area: per; justify-self: end; }
+      .plan-save { grid-area: save; justify-self: start; align-self: start; margin-top: 8px; }
+      .plan-note { grid-area: note; justify-self: end; margin-top: 4px; }
+    }
+
+    @media (max-width: 900px) {
+      .p-sec {
+        margin-top: 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .p-page .try {
+        padding: 24px;
+      }
+    }
+  </style>
+  <script src="../lang.js"></script>
+</head>
+<body class="p-page">
+  <a class="skip" href="#content"><span class="ar">انتقل إلى المحتوى</span><span class="en">Skip to content</span></a>
+
+  <header class="hdr">
+    <div class="wrap bar">
+      <a class="brand" href="../index.html"><img src="../app_icon.png" alt="" width="40" height="40"><span class="ar">ماي شوب مانجر</span><span class="en">MyShop Manager</span></a>
+      <button id="lang-toggle" type="button" lang="en">English</button>
+    </div>
+  </header>
+
+  <!-- Icon sprite: defined once per page, referenced from both language blocks. -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 20h16"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  </svg>
+
+  <div id="content">
+  <!-- ═══════════════════════ العربية ═══════════════════════ -->
+  <main data-lang="ar">
+    <div class="wrap band">
+      <header class="page-head">
+        <span class="eyebrow pill">أسعار الاشتراك</span>
+        <h1 id="ar-title">اختر اشتراكك</h1>
+        <p class="lead">المبيعات · المخزون · الفواتير · التقارير، في تطبيق واحد على الهاتف والتابلت والكمبيوتر.</p>
+      </header>
+
+      <ul class="plans" aria-label="مدد الاشتراك">
+        <li class="glass plan">
+          <div class="plan-head"><h2 class="plan-name">شهري</h2></div>
+          <p class="plan-price"><span class="plan-amt">20,000</span> <span class="plan-cur">دينار عراقي</span></p>
+          <p class="plan-per">لكل شهر</p>
+        </li>
+        <li class="plan plan-rec">
+          <div class="plan-head"><h2 class="plan-name">سنوي</h2></div>
+          <p class="plan-price"><span class="plan-amt">200,000</span> <span class="plan-cur">دينار عراقي</span></p>
+          <p class="plan-per">لكل سنة</p>
+          <p class="plan-save">وفّر 40,000 دينار عراقي</p>
+        </li>
+        <li class="glass plan">
+          <div class="plan-head"><h2 class="plan-name">4 سنوات</h2></div>
+          <p class="plan-price"><span class="plan-amt">500,000</span> <span class="plan-cur">دينار عراقي</span></p>
+          <p class="plan-per">لمدة 4 سنوات</p>
+          <p class="plan-save">وفّر 460,000 دينار عراقي</p>
+          <p class="plan-note">حوالي 10,400 دينار عراقي شهرياً</p>
+        </li>
+      </ul>
+      <p class="plans-note">التوفير مقارنةً بالاشتراك الشهري للمدة نفسها.</p>
+
+      <section class="cta p-sec" aria-labelledby="ar-contact">
+        <div class="cta-text">
+          <h2 id="ar-contact">تواصل معنا لنجهّز محلك</h2>
+          <p>راسلنا على واتساب أو اتصل بنا، ونرتّب معك كل التفاصيل.</p>
+          <p class="tel-num"><span dir="ltr">07737557775</span></p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-light" href="https://wa.me/9647737557775?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D9%85%D8%A7%D9%8A%20%D8%B4%D9%88%D8%A8%20%D9%85%D8%A7%D9%86%D8%AC%D8%B1."><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>راسلنا على واتساب</a>
+          <a class="btn btn-ghost" href="tel:+9647737557775"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>اتصل بنا</a>
+        </div>
+      </section>
+
+      <section class="p-sec" aria-labelledby="ar-start">
+        <h2 class="h2" id="ar-start">كيف تبدأ</h2>
+        <ol class="steps">
+          <li class="glass"><span class="num">1</span><div><h3>تواصل معنا</h3><p>على واتساب أو بالهاتف، واختر المدة التي تناسبك.</p></div></li>
+          <li class="glass"><span class="num">2</span><div><h3>نجهّز محلك</h3><p>ننشئ حساب محلك على التطبيق.</p></div></li>
+          <li class="glass"><span class="num">3</span><div><h3>حمّل التطبيق وسجّل الدخول</h3><p>من App Store أو Google Play، ثم سجّل الدخول بحساب محلك.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="glass try p-sec" aria-labelledby="ar-try">
+        <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg></span>
+        <div>
+          <h2 id="ar-try">جرّبه قبل أن تشترك</h2>
+          <p>حمّل التطبيق واضغط «جرّب التطبيق» في شاشة تسجيل الدخول، لتتجوّل في محل تجريبي ببيانات كاملة. لا يُحفظ شيء.</p>
+          <div class="btn-row">
+            <a class="btn btn-s" href="https://apps.apple.com/us/app/myshop-manager/id6795263039" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>حمّل من App Store</a>
+            <a class="btn btn-s" href="https://play.google.com/store/apps/details?id=com.aliwaseem.myshopmanager" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>حمّل من Google Play</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════ English ═══════════════════════ -->
+  <main data-lang="en" dir="ltr">
+    <div class="wrap band">
+      <header class="page-head">
+        <span class="eyebrow pill">Subscription prices</span>
+        <h1 id="en-title">Choose your plan</h1>
+        <p class="lead">Sales · Inventory · Invoices · Reports, in one app on phone, tablet and computer.</p>
+      </header>
+
+      <ul class="plans" aria-label="Subscription plans">
+        <li class="glass plan">
+          <div class="plan-head"><h2 class="plan-name">Monthly</h2></div>
+          <p class="plan-price"><span class="plan-amt">20,000</span> <span class="plan-cur">Iraqi Dinar</span></p>
+          <p class="plan-per">per month</p>
+        </li>
+        <li class="plan plan-rec">
+          <div class="plan-head"><h2 class="plan-name">Yearly</h2></div>
+          <p class="plan-price"><span class="plan-amt">200,000</span> <span class="plan-cur">Iraqi Dinar</span></p>
+          <p class="plan-per">per year</p>
+          <p class="plan-save">Save 40,000 Iraqi Dinar</p>
+        </li>
+        <li class="glass plan">
+          <div class="plan-head"><h2 class="plan-name">4 years</h2></div>
+          <p class="plan-price"><span class="plan-amt">500,000</span> <span class="plan-cur">Iraqi Dinar</span></p>
+          <p class="plan-per">for 4 years</p>
+          <p class="plan-save">Save 460,000 Iraqi Dinar</p>
+          <p class="plan-note">About 10,400 Iraqi Dinar a month</p>
+        </li>
+      </ul>
+      <p class="plans-note">Savings are compared with the monthly plan over the same period.</p>
+
+      <section class="cta p-sec" aria-labelledby="en-contact">
+        <div class="cta-text">
+          <h2 id="en-contact">Get in touch and we'll set up your shop</h2>
+          <p>Message us on WhatsApp or call, and we'll sort out the details with you.</p>
+          <p class="tel-num"><span dir="ltr">07737557775</span></p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-light" href="https://wa.me/9647737557775?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20MyShop%20Manager%20subscription."><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Message us on WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+9647737557775"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Call us</a>
+        </div>
+      </section>
+
+      <section class="p-sec" aria-labelledby="en-start">
+        <h2 class="h2" id="en-start">How to start</h2>
+        <ol class="steps">
+          <li class="glass"><span class="num">1</span><div><h3>Get in touch</h3><p>Message or call us, and pick the plan that suits you.</p></div></li>
+          <li class="glass"><span class="num">2</span><div><h3>We set up your shop</h3><p>We create your shop's account in the app.</p></div></li>
+          <li class="glass"><span class="num">3</span><div><h3>Download and sign in</h3><p>From the App Store or Google Play, then sign in with your shop's account.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="glass try p-sec" aria-labelledby="en-try">
+        <span class="tile"><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg></span>
+        <div>
+          <h2 id="en-try">Try it before you subscribe</h2>
+          <p>Download the app and tap “Try the App” on the sign-in screen to explore a sample shop with full data. Nothing is saved.</p>
+          <div class="btn-row">
+            <a class="btn btn-s" href="https://apps.apple.com/us/app/myshop-manager/id6795263039" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>Get it on the App Store</a>
+            <a class="btn btn-s" href="https://play.google.com/store/apps/details?id=com.aliwaseem.myshopmanager" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>Get it on Google Play</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  </div>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="brand" href="../index.html"><img src="../app_icon.png" alt="" width="40" height="40"><span class="ar">ماي شوب مانجر</span><span class="en">MyShop Manager</span></a>
+          <p class="tag"><span class="ar">إدارة المبيعات والمخزون للمحلات في العراق.</span><span class="en">Sales and inventory management for shops in Iraq.</span></p>
+        </div>
+        <nav aria-label="App">
+          <h2><span class="ar">التطبيق</span><span class="en">App</span></h2>
+          <ul>
+            <li><a href="../features.html"><span class="ar">المزايا</span><span class="en">Features</span></a></li>
+            <li><a href="../how.html"><span class="ar">كيف يعمل</span><span class="en">How it works</span></a></li>
+            <li><a href="../screens.html"><span class="ar">الشاشات</span><span class="en">Screens</span></a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Help">
+          <h2><span class="ar">المساعدة</span><span class="en">Help</span></h2>
+          <ul>
+            <li><a href="../faq.html"><span class="ar">الأسئلة الشائعة</span><span class="en">FAQ</span></a></li>
+            <li><a href="../support.html"><span class="ar">الدعم</span><span class="en">Support</span></a></li>
+            <li><a href="mailto:myshop.manager.app@gmail.com">myshop.manager.app@gmail.com</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h2><span class="ar">قانوني</span><span class="en">Legal</span></h2>
+          <ul>
+            <li><a href="../privacy.html"><span class="ar">سياسة الخصوصية</span><span class="en">Privacy Policy</span></a></li>
+            <li><a href="../terms.html"><span class="ar">شروط الاستخدام</span><span class="en">Terms of Service</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="credit"><span class="ar">MyShop Manager — تطوير: علي وسيم</span><span class="en">MyShop Manager — developed by Ali Waseem</span></p>
+    </div>
+  </footer>
+</body>
+</html>
